@@ -12,7 +12,7 @@ export default {
     extend: {
       backgroundImage: theme => ({
         'gradient-to-45':
-          'linear-gradient(305deg, rgba(126,236,199,0.46), rgba(168,85,247,0.46), rgba(236,72,153,0.36));transitionDuration(500ms)',
+          'linear-gradient(305deg, rgba(126,236,199,0.46), rgba(168,85,247,0.46), rgba(236,72,153,0.36))',
         'gradient-to-135':
           'linear-gradient(305deg, #1f5c48, #3b1360, #9d1f5e)',
         // You can add more custom classes here
