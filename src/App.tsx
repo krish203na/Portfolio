@@ -250,7 +250,7 @@ function App() {
             <div className="lg:bg-[#ffffff42] lg:bg-white lg:dark:bg-black dark:bg-[#00000038] duration-1000 backdrop-blur-md flex flex-col md:flex-row gap-3 md:gap-0 lg:flex-col items-center justify-around h-full py-[1vh] md:h-[95%] sticky md:rounded-xl w-[100%] p-[1vw] lg:p-0">
               <div className="h-[50%] flex lg:flex-col gap-1 duration-1000 justify-around lg:w-full md:w-[60%] w-full items-center text-black dark:text-white text-[1.6rem] hover">
                 <NavLink
-                  to={"/portfolio/home"}
+                  to={"/Portfolio/home"}
                   className={"rounded-lg p-[3vw] md:p-0 duration-1000"}
                   style={({ isActive }) => {
                     return {
@@ -273,7 +273,7 @@ function App() {
                   </motion.div>
                 </NavLink>
                 <NavLink
-                  to={"/portfolio/education"}
+                  to={"/Portfolio/education"}
                   className={"rounded-lg p-[3vw] md:p-0 duration-1000"}
                   style={({ isActive }) => {
                     return {
@@ -293,7 +293,7 @@ function App() {
                   </motion.div>
                 </NavLink>
                 <NavLink
-                  to={"/portfolio/skill"}
+                  to={"/Portfolio/skill"}
                   className={"rounded-lg p-[3vw] md:p-0 duration-1000"}
                   style={({ isActive }) => {
                     return {
@@ -313,7 +313,7 @@ function App() {
                   </motion.div>
                 </NavLink>
                 <NavLink
-                  to={"/portfolio/project"}
+                  to={"/Portfolio/project"}
                   className={"rounded-lg p-[3vw] md:p-0 duration-1000"}
                   style={({ isActive }) => {
                     return {
@@ -333,7 +333,7 @@ function App() {
                   </motion.div>
                 </NavLink>
                 <NavLink
-                  to={"/portfolio/contact"}
+                  to={"/Portfolio/contact"}
                   className={"rounded-lg p-[3vw] md:p-0 duration-1000"}
                   style={({ isActive }) => {
                     return {
