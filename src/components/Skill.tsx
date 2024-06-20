@@ -24,19 +24,19 @@ const Skill = () => {
   ];
 
   const frameworks = [
-    { img: "src/assets/images/react.png", name: "React" },
-    { img: "src/assets/images/spring.png", name: "Spring" },
-    { img: "src/assets/images/mysql.png", name: "MySQL" },
-    { img: "src/assets/images/nodejs.png", name: "nodeJS" },
-    { img: "src/assets/images/hibernate.png", name: "Hibernate" },
-    { img: "src/assets/images/tailwind.png", name: "Tailwind" },
-    { img: "src/assets/images/bootstrap.png", name: "Bootstrap" },
-    { img: "src/assets/images/framermotion.png", name: "Framer Motion" },
-    { img: "src/assets/images/gsap.png", name: "GSAP" },
-    { img: "src/assets/images/threejs.png", name: "ThreeJS" },
-    { img: "src/assets/images/spline.png", name: "Spline" },
-    { img: "src/assets/images/git.png", name: "git" },
-    { img: "src/assets/images/github.png", name: "Github" },
+    { img: "/images/react.png", name: "React" },
+    { img: "/images/spring.png", name: "Spring" },
+    { img: "/images/mysql.png", name: "MySQL" },
+    { img: "/images/nodejs.png", name: "nodeJS" },
+    { img: "/images/hibernate.png", name: "Hibernate" },
+    { img: "/images/tailwind.png", name: "Tailwind" },
+    { img: "/images/bootstrap.png", name: "Bootstrap" },
+    { img: "/images/framermotion.png", name: "Framer Motion" },
+    { img: "/images/gsap.png", name: "GSAP" },
+    { img: "/images/threejs.png", name: "ThreeJS" },
+    { img: "/images/spline.png", name: "Spline" },
+    { img: "/images/git.png", name: "git" },
+    { img: "/images/github.png", name: "Github" },
   ];
 
   return (
