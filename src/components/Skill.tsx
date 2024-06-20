@@ -5,13 +5,15 @@ import { motion } from "framer-motion";
 
 const Skill = () => {
   const [
-    // Theme,
+    Theme,
     texttheme,
     // lightPlateTheme,
     // lightBoderTheme,
     // darkPlateTheme,
     // darkBoderTheme,
   ]: any = useContext(context);
+
+  console.log(Theme)
 
   const languages = [
     { img: "/images/java.png", name: "Java", percentage: "85%" },
@@ -31,7 +33,7 @@ const Skill = () => {
     { img: "/images/bootstrap.png", name: "Bootstrap" },
     { img: "/images/framermotion.png", name: "Framer Motion" },
     { img: "/images/gsap.png", name: "GSAP" },
-    { img: "/images/threejs.png", name: "Three JS" },
+    { img: "/images/threejs.png", name: "ThreeJS" },
     { img: "/images/spline.png", name: "Spline" },
     { img: "/images/git.png", name: "git" },
     { img: "/images/github.png", name: "Github" },
@@ -86,7 +88,7 @@ const Skill = () => {
           className="w-[40%] h-1 duration-1000"
         ></div>
       </motion.div>
-      <motion.div className="p-[3vw] flex justify-center items-center flex-wrap gap-[2vw] lg:gap-[2vw] text-black dark:text-white">
+      <motion.div className="p-[3vw] flex justify-center items-center flex-wrap overflow-visible gap-[2vw] lg:gap-[2vw] text-black dark:text-white">
         {frameworks.map((e, i) => {
           return skillCard(e.img, e.name, i.toString());
         })}

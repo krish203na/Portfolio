@@ -18,8 +18,8 @@ import { AnimatePresence } from "framer-motion";
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route>
-      <Route path="/" element={<App />}>
-        <Route path="/" element={<Home />} />
+      <Route path="/" element={<App/>}>
+        <Route path="/home" element={<Home />} />
         <Route path="/education" element={<Education />} />
         <Route path="/skill" element={<Skill />} />
         <Route path="/project" element={<Project />} />

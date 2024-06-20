@@ -334,7 +334,7 @@ const Home = () => {
           <h1 className="text-3xl text-center">let's start working</h1>
           <h1 className="text-6xl text-center">let's start a new project</h1>
         </div>
-        <NavLink to={"/contact"}>
+        <NavLink to={"/portfolio/contact"}>
           <button
             style={{ backgroundColor: texttheme }}
             className="px-5 py-3 rounded-xl"

@@ -4,7 +4,7 @@ import { context } from '../App';
 const Contact = () => {
 
   const [
-    // Theme,
+    Theme,
     texttheme,
     // lightPlateTheme,
     // lightBoderTheme,
@@ -12,13 +12,15 @@ const Contact = () => {
     // darkBoderTheme,
   ]: any = useContext(context);
 
+console.log(Theme)
+
   return (
     <div className="text-white flex p-[3vw] h-screen">
       <div className="w-1/2 h-full  flex flex-col gap-[3vh] justify-center">
         <div className=" text-8xl">Get in touch</div>
 
         <div className=" text-4xl">
-          Let's make <span style={{ color: texttheme }}>something great</span>{" "}
+          Let's make <span style={{color:texttheme}}>something great </span>
           Together
         </div>
       </div>

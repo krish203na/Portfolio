@@ -250,7 +250,7 @@ function App() {
             <div className="lg:bg-[#ffffff42] lg:bg-white lg:dark:bg-black dark:bg-[#00000038] duration-1000 backdrop-blur-md flex flex-col md:flex-row gap-3 md:gap-0 lg:flex-col items-center justify-around h-full py-[1vh] md:h-[95%] sticky md:rounded-xl w-[100%] p-[1vw] lg:p-0">
               <div className="h-[50%] flex lg:flex-col gap-1 duration-1000 justify-around lg:w-full md:w-[60%] w-full items-center text-black dark:text-white text-[1.6rem] hover">
                 <NavLink
-                  to={"/"}
+                  to={"/home"}
                   className={"rounded-lg p-[3vw] md:p-0 duration-1000"}
                   style={({ isActive }) => {
                     return {
@@ -313,7 +313,7 @@ function App() {
                   </motion.div>
                 </NavLink>
                 <NavLink
-                  to={"project"}
+                  to={"/project"}
                   className={"rounded-lg p-[3vw] md:p-0 duration-1000"}
                   style={({ isActive }) => {
                     return {
@@ -352,7 +352,7 @@ function App() {
                   >
                     <i className="fa-solid fa-address-book duration-1000 text-black dark:text-white"></i>
                   </motion.div>
-                </NavLink>{" "}
+                </NavLink>
               </div>
               <div
                 className={`lg:flex-col h-[30%] flex w-[40%] justify-center duration-1000 items-center gap-5 md:gap-2 text-black dark:text-white`}
