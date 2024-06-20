@@ -57,7 +57,8 @@ const Project = () => {
             loop
             muted
             controls
-            src="/video/Fashi.mp4"
+            // src="/video/Fashi.mp4"
+            src="src\assets\video\Fashi.mp4"
           ></video>
           <div className="flex flex-col items-center py-[2vh] gap-[2.5vh]">
             <h1 className="text-2xl text-center ">Fashi. the Fashion</h1>
@@ -68,7 +69,8 @@ const Project = () => {
               className={`w-[40%] duration-500 min-h-[30px] h-[10%] font-normal text-md flex justify-center items-center rounded-lg`}
               style={{ background: texttheme }}
             >
-              <a target="blank"
+              <a
+                target="blank"
                 className="w-full h-full text-center hover:text-white hover:dark:text-black duration-500"
                 href="https://github.com/krish203na/Fashi._for_Fashion"
               >
@@ -94,7 +96,7 @@ const Project = () => {
             loop
             muted
             controls
-            src="/video/Weatherify.mp4"
+            src="src\assets\video\Weatherify.mp4"
           ></video>
           <div className="flex flex-col items-center py-[2vh] gap-[2.5vh]">
             <h1 className="text-2xl text-center ">Weatherif!</h1>
@@ -106,7 +108,8 @@ const Project = () => {
                 className={`w-[40%] duration-500 min-h-[30px] h-[10%] font-normal text-md flex justify-center items-center rounded-lg`}
                 style={{ background: texttheme }}
               >
-                <a target="blank"
+                <a
+                  target="blank"
                   className="w-full h-full text-center hover:text-white hover:dark:text-black duration-500"
                   href="https://github.com/krish203na/wetherify"
                 >
@@ -117,7 +120,8 @@ const Project = () => {
                 className={`w-[40%] duration-500 min-h-[30px] h-[10%] font-normal text-md flex justify-center items-center rounded-lg`}
                 style={{ background: texttheme }}
               >
-                <a target="blank"
+                <a
+                  target="blank"
                   className="w-full h-full text-center hover:text-white hover:dark:text-black duration-500"
                   href="https://krish203na.github.io/wetherify/"
                 >
@@ -144,7 +148,7 @@ const Project = () => {
             loop
             muted
             controls
-            src="/video/PortfolioHomepage.mp4"
+            src="src\assets\video\PortfolioHomepage.mp4"
           ></video>
           <div className="flex flex-col items-center py-[2vh] gap-[2.5vh]">
             <h1 className="text-2xl text-center ">3D portfolio</h1>
@@ -157,7 +161,8 @@ const Project = () => {
                 className={`w-[40%] duration-500 min-h-[30px] h-[10%] font-normal text-md flex justify-center items-center rounded-lg`}
                 style={{ background: texttheme }}
               >
-                <a target="blank"
+                <a
+                  target="blank"
                   className="w-full h-full text-center hover:text-white hover:dark:text-black duration-500"
                   href="https://github.com/krish203na/portpholio"
                 >
@@ -168,7 +173,8 @@ const Project = () => {
                 className={`w-[40%] duration-500 min-h-[30px] h-[10%] font-normal text-md flex justify-center items-center rounded-lg`}
                 style={{ background: texttheme }}
               >
-                <a target="blank"
+                <a
+                  target="blank"
                   className="w-full h-full text-center hover:text-white hover:dark:text-black duration-500"
                   href="https://krish203na.github.io/portpholio/"
                 >
@@ -195,7 +201,7 @@ const Project = () => {
             loop
             muted
             controls
-            src="/video/personal.mp4"
+            src="src\assets\video\personal.mp4"
           ></video>
           <div className="flex flex-col items-center py-[2vh] gap-[2.5vh]">
             <h1 className="text-2xl text-center ">Personal Portfolio</h1>
@@ -208,7 +214,8 @@ const Project = () => {
                 className={`w-[40%] duration-500 min-h-[30px] h-[10%] font-normal text-md flex justify-center items-center rounded-lg`}
                 style={{ background: texttheme }}
               >
-                <a target="blank"
+                <a
+                  target="blank"
                   className="w-full h-full text-center hover:text-white hover:dark:text-black duration-500"
                   href="https://krish203na.github.io/portpholio/"
                 >
@@ -219,7 +226,8 @@ const Project = () => {
                 className={`w-[40%] duration-500 min-h-[30px] h-[10%] font-normal text-md flex justify-center items-center rounded-lg`}
                 style={{ background: texttheme }}
               >
-                <a target="blank"
+                <a
+                  target="blank"
                   className="w-full h-full text-center hover:text-white hover:dark:text-black duration-500"
                   href="https://krish203na.github.io/portpholio/"
                 >
@@ -241,7 +249,7 @@ const Project = () => {
           className="w-[45%] min-h-[30vh] h-full border-4 rounded-xl p-[1.5vw] duration-1000 ease-linear"
         >
           <img
-            src="/images/wixStudio.png"
+            src="src/assets/images/wixStudio.png"
             className="w-full rounded-lg"
             alt=""
           />
@@ -256,7 +264,8 @@ const Project = () => {
                 className={`w-[40%] duration-500 min-h-[30px] h-[10%] font-normal text-md flex justify-center items-center rounded-lg`}
                 style={{ background: texttheme }}
               >
-                <a target="blank"
+                <a
+                  target="blank"
                   className="w-full h-full text-center hover:text-white hover:dark:text-black duration-500"
                   href="https://github.com/krish203na/wix_Studio"
                 >
@@ -267,7 +276,8 @@ const Project = () => {
                 className={`w-[40%] duration-500 min-h-[30px] h-[10%] font-normal text-md flex justify-center items-center rounded-lg`}
                 style={{ background: texttheme }}
               >
-                <a target="blank"
+                <a
+                  target="blank"
                   className="w-full h-full text-center hover:text-white hover:dark:text-black duration-500"
                   href="https://krish203na.github.io/wix_Studio/"
                 >

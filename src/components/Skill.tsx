@@ -16,27 +16,27 @@ const Skill = () => {
   console.log(Theme)
 
   const languages = [
-    { img: "/images/java.png", name: "Java", percentage: "85%" },
-    { img: "/images/javascript.png", name: "JavaScript", percentage: "75%" },
-    { img: "/images/html.png", name: "HTML", percentage: "90%" },
-    { img: "/images/css.png", name: "CSS", percentage: "95%" },
-    { img: "/images/typescript.png", name: "TypeScript", percentage: "75%" },
+    { img: "src/assets/images/java.png", name: "Java", percentage: "85%" },
+    { img: "src/assets/images/javascript.png", name: "JavaScript", percentage: "75%" },
+    { img: "src/assets/images/html.png", name: "HTML", percentage: "90%" },
+    { img: "src/assets/images/css.png", name: "CSS", percentage: "95%" },
+    { img: "src/assets/images/typescript.png", name: "TypeScript", percentage: "75%" },
   ];
 
   const frameworks = [
-    { img: "/images/react.png", name: "React" },
-    { img: "/images/spring.png", name: "Spring" },
-    { img: "/images/mysql.png", name: "MySQL" },
-    { img: "/images/nodejs.png", name: "nodeJS" },
-    { img: "/images/hibernate.png", name: "Hibernate" },
-    { img: "/images/tailwind.png", name: "Tailwind" },
-    { img: "/images/bootstrap.png", name: "Bootstrap" },
-    { img: "/images/framermotion.png", name: "Framer Motion" },
-    { img: "/images/gsap.png", name: "GSAP" },
-    { img: "/images/threejs.png", name: "ThreeJS" },
-    { img: "/images/spline.png", name: "Spline" },
-    { img: "/images/git.png", name: "git" },
-    { img: "/images/github.png", name: "Github" },
+    { img: "src/assets/images/react.png", name: "React" },
+    { img: "src/assets/images/spring.png", name: "Spring" },
+    { img: "src/assets/images/mysql.png", name: "MySQL" },
+    { img: "src/assets/images/nodejs.png", name: "nodeJS" },
+    { img: "src/assets/images/hibernate.png", name: "Hibernate" },
+    { img: "src/assets/images/tailwind.png", name: "Tailwind" },
+    { img: "src/assets/images/bootstrap.png", name: "Bootstrap" },
+    { img: "src/assets/images/framermotion.png", name: "Framer Motion" },
+    { img: "src/assets/images/gsap.png", name: "GSAP" },
+    { img: "src/assets/images/threejs.png", name: "ThreeJS" },
+    { img: "src/assets/images/spline.png", name: "Spline" },
+    { img: "src/assets/images/git.png", name: "git" },
+    { img: "src/assets/images/github.png", name: "Github" },
   ];
 
   return (
