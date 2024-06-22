@@ -58,7 +58,7 @@ const Project = () => {
             muted
             controls
             // src="/video/Fashi.mp4"
-            src="src\assets\video\Fashi.mp4"
+            src=".\video\Fashi.mp4"
           ></video>
           <div className="flex flex-col items-center py-[2vh] gap-[2.5vh]">
             <h1 className="text-2xl text-center ">Fashi. the Fashion</h1>
@@ -96,7 +96,7 @@ const Project = () => {
             loop
             muted
             controls
-            src="src\assets\video\Weatherify.mp4"
+            src=".\video\Weatherify.mp4"
           ></video>
           <div className="flex flex-col items-center py-[2vh] gap-[2.5vh]">
             <h1 className="text-2xl text-center ">Weatherif!</h1>
@@ -148,7 +148,7 @@ const Project = () => {
             loop
             muted
             controls
-            src="src\assets\video\PortfolioHomepage.mp4"
+            src=".\video\PortfolioHomepage.mp4"
           ></video>
           <div className="flex flex-col items-center py-[2vh] gap-[2.5vh]">
             <h1 className="text-2xl text-center ">3D portfolio</h1>
@@ -201,7 +201,7 @@ const Project = () => {
             loop
             muted
             controls
-            src="src\assets\video\personal.mp4"
+            src=".\video\personal.mp4"
           ></video>
           <div className="flex flex-col items-center py-[2vh] gap-[2.5vh]">
             <h1 className="text-2xl text-center ">Personal Portfolio</h1>
@@ -249,7 +249,7 @@ const Project = () => {
           className="w-[45%] min-h-[30vh] h-full border-4 rounded-xl p-[1.5vw] duration-1000 ease-linear"
         >
           <img
-            src="src/assets/images/wixStudio.png"
+            src="./images/wixStudio.png"
             className="w-full rounded-lg"
             alt=""
           />
