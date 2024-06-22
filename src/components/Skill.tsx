@@ -40,7 +40,7 @@ const Skill = () => {
   ];
 
   return (
-    <div className="text-white p-[3vw] h-full">
+    <div className="text-white md:p-[3vw] p-[5vh] h-full">
       <motion.div
         initial={{ x: 300, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
@@ -69,7 +69,7 @@ const Skill = () => {
           className="w-[60%] h-1 duration-1000"
         ></div>
       </motion.div>
-      <motion.div className="p-[3vw] flex justify-center flex-wrap gap-[1.5vw] text-black dark:text-white">
+      <motion.div className="p-[3vw] h-full flex justify-center flex-wrap gap-[1.5vw] text-black dark:text-white">
         {languages.map((e, i) => {
           return languageCard(e.img, e.name, e.percentage, i.toString());
         })}
@@ -88,7 +88,7 @@ const Skill = () => {
           className="w-[40%] h-1 duration-1000"
         ></div>
       </motion.div>
-      <motion.div className="p-[3vw] flex justify-center items-center flex-wrap overflow-visible gap-[2vw] lg:gap-[2vw] text-black dark:text-white">
+      <motion.div className="md:p-[3vw] flex justify-center items-center flex-wrap gap-[2vw] lg:gap-[2vw] text-black dark:text-white">
         {frameworks.map((e, i) => {
           return skillCard(e.img, e.name, i.toString());
         })}
@@ -132,16 +132,17 @@ const skillCard = (img: string, name: string, i: string) => {
 
   return (
     <motion.div
-      initial={{ opacity: 0, x: 200 }}
-      whileInView={{ opacity: 1, x: 0 }}
-      transition={{ duration: 1 }}
+      initial={{ opacity: 0, y: -200 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1, ease:"linear" }}
       key={i}
       style={{
         backgroundColor: Theme === "dark" ? darkPlateTheme : lightPlateTheme,
         borderColor: Theme === "dark" ? darkBoderTheme : lightBoderTheme,
       }}
       whileHover={{ borderColor: texttheme }}
-      className="border-[3px] flex flex-col justify-center items-center text-center p-[1vw] rounded-xl"
+      
+      className="border-[2px] duration-1000 flex flex-col justify-center items-center text-center p-[1vw] rounded-xl"
     >
       <img className="w-[80px] text-center min-w-[80px]" src={img} alt="" />
       {name}
@@ -169,7 +170,7 @@ const languageCard = (
       key={i}
       initial={{ opacity: 0, x: 200 }}
       whileInView={{ opacity: 1, x: 0 }}
-      transition={{ duration: 1 }}
+      transition={{ duration: 1, ease:"linear" }}
       style={{
         backgroundColor: Theme === "dark" ? darkPlateTheme : lightPlateTheme,
         borderColor: Theme === "dark" ? darkBoderTheme : lightBoderTheme,
@@ -178,12 +179,13 @@ const languageCard = (
       // initial={{width:"100px"}}
       // whileHover={{width:"20vw"}}
       // transition={{duration:1}}
-      className="flex h-[8vw] w-[25vw] group items-center gap-[1vw] border-[3px] p-[1vw] rounded-xl"
+      className="flex md:h-full duration-1000 ease-linear w-[90%] md:w-[48%] min-w-[200px] group items-center gap-[1vw] border-[2px] p-[1vw] rounded-xl"
     >
-      <img className="w-[6vw] min-w-[80px]" src={img} alt="" />
+      <img className="w-[2vw] md:w-[5vw] lg:w-[6vw] min-w-[70px]" src={img} alt="" />
       <div className="w-full duration-1000">
         <div className="">
           <div>{name}</div>
+          <div className="text-xs">{percentage}</div>
           <motion.div
             initial={{ width: "10%" }}
             whileInView={{ width: "100%" }}

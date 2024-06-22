@@ -149,7 +149,7 @@ const Home = () => {
           initial={{ x: 300, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           // transition={{ duration: 1 }}
-          className="dark:text-white text-black flex flex-col rounded-xl gap-2 duration-1000 text-sm md:text-base font-normal p-[1vw]"
+          className="dark:text-white text-black flex flex-col rounded-xl gap-2 duration-1000 text-sm md:text-base font-normal p-[2vh] md:p-[1.5vw]"
           style={{
             backgroundColor:
               Theme === "dark" ? darkPlateTheme : lightPlateTheme,
@@ -181,7 +181,7 @@ const Home = () => {
           initial={{ x: 300, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           // transition={{ duration: 1 }}
-          className="dark:text-white text-black text-sm md:text-base rounded-lg duration-1000 font-normal p-[1vw]"
+          className="dark:text-white text-black text-sm md:text-base rounded-lg duration-1000 font-normal p-[2vh] md:p-[1.5vw]"
           style={{
             backgroundColor:
               Theme === "dark" ? darkPlateTheme : lightPlateTheme,

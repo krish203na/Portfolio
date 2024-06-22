@@ -19,7 +19,7 @@ const Education = () => {
       animate={{ opacity: 1, x: 0 }}
       transition={{ duration: 1 }}
       exit={{ x: 100 }}
-      className="text-white p-[3vw] h-full"
+      className="text-white p-[4vh] md:p-[3vw] h-full"
     >
       <motion.div
         initial={{ x: 300, opacity: 0 }}
@@ -32,7 +32,7 @@ const Education = () => {
         </h1>
         <div
           style={{ backgroundColor: texttheme }}
-          className="w-[60%] h-1 duration-1000"
+          className="w-[100%] h-1 duration-1000"
         ></div>
       </motion.div>
       <motion.div className="py-[3vw] flex flex-col gap-[1.5vw] text-black dark:text-white">
@@ -45,7 +45,7 @@ const Education = () => {
               Theme === "dark" ? darkPlateTheme : lightPlateTheme,
             borderColor: Theme === "dark" ? darkBoderTheme : lightBoderTheme,
           }}
-          className="font-normal flex gap-[2vw] text-sm p-[2vw] roundedxl border duration-1000"
+          className="font-normal flex gap-[2vw] text-sm p-[2vw] rounded-xl border duration-1000"
         >
           <div>
             <i

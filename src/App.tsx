@@ -13,9 +13,9 @@ function App() {
   // <======================================= Routes ===================================================>
 
   const [texttheme, setTexttheme] = useState("#facc15");
-  const [lightPlateTheme, setLightPlateTheme] = useState("#fff7d6");
+  const [lightPlateTheme, setLightPlateTheme] = useState("#fffcef");
   const [lightBoderTheme, setLightBoderTheme] = useState("#ffeb9d");
-  const [darkPlateTheme, setdarkPlateTheme] = useState("#0c0a09");
+  const [darkPlateTheme, setdarkPlateTheme] = useState("#211e04");
   const [darkBoderTheme, setdarkBoderTheme] = useState("#292524");
 
   const [Theme, setTheme] = useState("");
@@ -238,7 +238,7 @@ function App() {
             </div> */}
             <div
               id="main"
-              className="lg:w-[95%] md:block  relative h-[100%] lg:h-[95%] rounded-xl bg-[white] duration-1000 dark:bg-[#171717] lg:overflow-y-scroll overflow-x-hidden"
+              className="lg:w-[95%] w-full md:block  relative h-[100%] lg:h-[95%] rounded-xl bg-[white] duration-1000 dark:bg-[#171717] lg:overflow-y-scroll overflow-x-hidden"
             >
               <Outlet />
             </div>
@@ -363,7 +363,7 @@ function App() {
                     onclickEvent(
                       "#16a34a",
                       "#27272a",
-                      "#1c1917",
+                      "#061b06",
                       "#66ff9e",
                       "#edf6f0"
                     );
@@ -375,8 +375,8 @@ function App() {
                     onclickEvent(
                       "#e11d48",
                       "#27272a",
-                      "#1c1917",
-                      "#ff94a9",
+                      "#140404",
+                      "#ffbdca",
                       "#fff3f5"
                     );
                   }}
@@ -387,14 +387,14 @@ function App() {
                     onclickEvent(
                       "rgb(109,40,217)",
                       "rgb(31,41,55)",
-                      "rgb(3,7,18)",
-                      "#c39dff",
-                      "#f8f4ff"
+                      "#0c0618",
+                      "#cfb3fd",
+                      "#ece7ff"
                     );
                   }}
                   className="bg-[rgb(109,40,217)] rounded-full w-5 h-5"
                 ></button>
-                <button onClick={handleThemeSwitch} className="text-[#9d1f5e]">
+                <button onClick={handleThemeSwitch} className="text-[#061b06] ">
                   <div
                     className={` lg:w-[3vw] lg:h-[3vw] w-10 rounded-full duration-1000 flex justify-center items-center ${
                       Theme === "dark"

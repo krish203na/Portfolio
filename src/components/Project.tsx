@@ -21,7 +21,7 @@ const Project = () => {
   ]: any = useContext(context);
 
   return (
-    <div className="text-white p-[3vw] h-full">
+    <div className="text-white p-[3vh] md:p-[3vw] h-full">
       <motion.div
         initial={{ x: 300, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
@@ -36,9 +36,9 @@ const Project = () => {
           className="w-[60%] h-1 duration-1000"
         ></div>
       </motion.div>
-      <motion.div className="p-[1.5vw] flex justify-center flex-wrap gap-[1.5vw] text-black dark:text-white">
+      <motion.div className="p-[1.5vh] md:p-[1.5vw] flex justify-center flex-wrap gap-[1.5vw] text-black dark:text-white">
         <motion.div
-          initial={{ opacity: 0, x: -200 }}
+          initial={{ opacity: 0, x: 100 }}
           whileInView={{ opacity: 1, x: 0 }}
           whileHover={{ borderColor: texttheme }}
           style={{
@@ -46,7 +46,7 @@ const Project = () => {
               Theme === "dark" ? darkPlateTheme : lightPlateTheme,
             borderColor: Theme === "dark" ? darkBoderTheme : lightBoderTheme,
           }}
-          className="w-[45%] relative min-h-[30vh] h-full border-4 rounded-xl p-[1.5vw] duration-1000 ease-linear"
+          className="w-[45%] relative min-w-[300px] min-h-[30vh] h-full border-4 rounded-xl p-[1.5vw] duration-1000 ease-linear"
         >
           <div style={{ color: texttheme }} className="absolute -top-4 -left-2">
             <i className="fa-solid fa-beat-fade fa-trophy-star text-5xl"></i>
@@ -80,7 +80,7 @@ const Project = () => {
           </div>
         </motion.div>
         <motion.div
-          initial={{ opacity: 0, x: 200 }}
+          initial={{ opacity: 0, x: -100 }}
           whileInView={{ opacity: 1, x: 0 }}
           whileHover={{ borderColor: texttheme }}
           style={{
@@ -88,7 +88,7 @@ const Project = () => {
               Theme === "dark" ? darkPlateTheme : lightPlateTheme,
             borderColor: Theme === "dark" ? darkBoderTheme : lightBoderTheme,
           }}
-          className="w-[45%] min-h-[30vh] h-full border-4 rounded-xl p-[1.5vw] duration-1000 ease-linear"
+          className="w-[45%] min-w-[300px] min-h-[30vh] h-full border-4 rounded-xl p-[1.5vw] duration-1000 ease-linear"
         >
           <video
             className="w-full rounded-lg"
@@ -132,7 +132,7 @@ const Project = () => {
           </div>
         </motion.div>
         <motion.div
-          initial={{ opacity: 0, x: -200 }}
+          initial={{ opacity: 0, x: 100 }}
           whileInView={{ opacity: 1, x: 0 }}
           whileHover={{ borderColor: texttheme }}
           style={{
@@ -140,7 +140,7 @@ const Project = () => {
               Theme === "dark" ? darkPlateTheme : lightPlateTheme,
             borderColor: Theme === "dark" ? darkBoderTheme : lightBoderTheme,
           }}
-          className="w-[45%] min-h-[30vh] h-full border-4 rounded-xl p-[1.5vw] duration-1000 ease-linear"
+          className="w-[45%] min-w-[300px] min-h-[30vh] h-full border-4 rounded-xl p-[1.5vw] duration-1000 ease-linear"
         >
           <video
             className="w-full rounded-lg"
@@ -185,7 +185,7 @@ const Project = () => {
           </div>
         </motion.div>
         <motion.div
-          initial={{ opacity: 0, x: 200 }}
+          initial={{ opacity: 0, x: -100 }}
           whileInView={{ opacity: 1, x: 0 }}
           whileHover={{ borderColor: texttheme }}
           style={{
@@ -193,7 +193,7 @@ const Project = () => {
               Theme === "dark" ? darkPlateTheme : lightPlateTheme,
             borderColor: Theme === "dark" ? darkBoderTheme : lightBoderTheme,
           }}
-          className="w-[45%] min-h-[30vh] h-full border-4 rounded-xl p-[1.5vw] duration-1000 ease-linear"
+          className="w-[45%] min-w-[300px] min-h-[30vh] h-full border-4 rounded-xl p-[1.5vw] duration-1000 ease-linear"
         >
           <video
             className="w-full rounded-lg"
@@ -238,7 +238,7 @@ const Project = () => {
           </div>
         </motion.div>
         <motion.div
-          initial={{ opacity: 0, x: -200 }}
+          initial={{ opacity: 0, x: 100 }}
           whileInView={{ opacity: 1, x: 0 }}
           whileHover={{ borderColor: texttheme }}
           style={{
@@ -246,7 +246,7 @@ const Project = () => {
               Theme === "dark" ? darkPlateTheme : lightPlateTheme,
             borderColor: Theme === "dark" ? darkBoderTheme : lightBoderTheme,
           }}
-          className="w-[45%] min-h-[30vh] h-full border-4 rounded-xl p-[1.5vw] duration-1000 ease-linear"
+          className="w-[45%] min-w-[300px] min-h-[30vh] h-full border-4 rounded-xl p-[1.5vw] duration-1000 ease-linear"
         >
           <img
             src="./images/wixStudio.png"
