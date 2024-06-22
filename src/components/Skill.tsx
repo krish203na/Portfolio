@@ -142,7 +142,7 @@ const skillCard = (img: string, name: string, i: string) => {
         borderColor: Theme === "dark" ? darkBoderTheme : lightBoderTheme,
       }}
       whileHover={{ borderColor: texttheme }}
-      className="border-[2px] duration-1000 flex flex-col justify-center items-center text-center p-[1vw] rounded-xl"
+      className="border-[2px] flex flex-col justify-center items-center text-center p-[1vw] rounded-xl"
     >
       <img className="w-[80px] text-center min-w-[80px]" src={img} alt="" />
       {name}
@@ -179,7 +179,7 @@ const languageCard = (
       // initial={{width:"100px"}}
       // whileHover={{width:"20vw"}}
       // transition={{duration:1}}
-      className="flex md:h-full duration-1000 ease-linear w-[90%] md:w-[48%] min-w-[200px] group items-center gap-[1vw] border-[2px] p-[1vw] rounded-xl"
+      className="flex md:h-full ease-linear w-[90%] md:w-[48%] min-w-[200px] group items-center gap-[1vw] border-[2px] p-[1vw] rounded-xl"
     >
       <img
         className="w-[2vw] md:w-[5vw] lg:w-[6vw] min-w-[70px]"
