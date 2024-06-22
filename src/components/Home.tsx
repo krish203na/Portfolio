@@ -157,7 +157,7 @@ const Home = () => {
           }}
         >
           <div>
-            I am <strong>Krishna Ashok Panchal</strong>, I am passionate Full
+            I am <strong style={{color:texttheme, transitionDuration:"1s"}}>Krishna Ashok Panchal</strong>, I am passionate Full
             stack developer from Mumbai, India. I love to transform ideas into
             Impactful Solutions with a robust skill sets. I've created impactful
             projects, including a full-stack e-commerce website, weather web

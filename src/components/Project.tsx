@@ -46,7 +46,7 @@ const Project = () => {
               Theme === "dark" ? darkPlateTheme : lightPlateTheme,
             borderColor: Theme === "dark" ? darkBoderTheme : lightBoderTheme,
           }}
-          className="w-[45%] relative min-w-[300px] min-h-[30vh] h-full border-4 rounded-xl p-[1.5vw] duration-1000 ease-linear"
+          className="w-[45%] relative min-w-[300px] min-h-[30vh] h-full border-[2px] rounded-xl p-[1.5vw] duration-1000 ease-linear"
         >
           <div style={{ color: texttheme }} className="absolute -top-4 -left-2">
             <i className="fa-solid fa-beat-fade fa-trophy-star text-5xl"></i>
@@ -88,7 +88,7 @@ const Project = () => {
               Theme === "dark" ? darkPlateTheme : lightPlateTheme,
             borderColor: Theme === "dark" ? darkBoderTheme : lightBoderTheme,
           }}
-          className="w-[45%] min-w-[300px] min-h-[30vh] h-full border-4 rounded-xl p-[1.5vw] duration-1000 ease-linear"
+          className="w-[45%] min-w-[300px] min-h-[30vh] h-full border-[2px] rounded-xl p-[1.5vw] duration-1000 ease-linear"
         >
           <video
             className="w-full rounded-lg"
@@ -140,7 +140,7 @@ const Project = () => {
               Theme === "dark" ? darkPlateTheme : lightPlateTheme,
             borderColor: Theme === "dark" ? darkBoderTheme : lightBoderTheme,
           }}
-          className="w-[45%] min-w-[300px] min-h-[30vh] h-full border-4 rounded-xl p-[1.5vw] duration-1000 ease-linear"
+          className="w-[45%] min-w-[300px] min-h-[30vh] h-full border-[2px] rounded-xl p-[1.5vw] duration-1000 ease-linear"
         >
           <video
             className="w-full rounded-lg"
@@ -193,7 +193,7 @@ const Project = () => {
               Theme === "dark" ? darkPlateTheme : lightPlateTheme,
             borderColor: Theme === "dark" ? darkBoderTheme : lightBoderTheme,
           }}
-          className="w-[45%] min-w-[300px] min-h-[30vh] h-full border-4 rounded-xl p-[1.5vw] duration-1000 ease-linear"
+          className="w-[45%] min-w-[300px] min-h-[30vh] h-full border-[2px] rounded-xl p-[1.5vw] duration-1000 ease-linear"
         >
           <video
             className="w-full rounded-lg"
@@ -246,7 +246,7 @@ const Project = () => {
               Theme === "dark" ? darkPlateTheme : lightPlateTheme,
             borderColor: Theme === "dark" ? darkBoderTheme : lightBoderTheme,
           }}
-          className="w-[45%] min-w-[300px] min-h-[30vh] h-full border-4 rounded-xl p-[1.5vw] duration-1000 ease-linear"
+          className="w-[45%] min-w-[300px] min-h-[30vh] h-full border-[2px] rounded-xl p-[1.5vw] duration-1000 ease-linear"
         >
           <img
             src="./images/wixStudio.png"

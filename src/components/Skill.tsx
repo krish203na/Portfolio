@@ -4,16 +4,13 @@ import { motion } from "framer-motion";
 // import { GradientType } from "@tsparticles/engine";
 
 const Skill = () => {
-  const [
-    Theme,
-    texttheme,
-    // lightPlateTheme,
-    // lightBoderTheme,
-    // darkPlateTheme,
-    // darkBoderTheme,
-  ]: any = useContext(context);
+  const [Theme, texttheme]: // lightPlateTheme,
+  // lightBoderTheme,
+  // darkPlateTheme,
+  // darkBoderTheme,
+  any = useContext(context);
 
-  console.log(Theme)
+  console.log(Theme);
 
   const languages = [
     { img: "./images/java.png", name: "Java", percentage: "85%" },
@@ -21,6 +18,12 @@ const Skill = () => {
     { img: "./images/html.png", name: "HTML", percentage: "90%" },
     { img: "./images/css.png", name: "CSS", percentage: "95%" },
     { img: "./images/typescript.png", name: "TypeScript", percentage: "75%" },
+  ];
+
+  const softwares = [
+    { img: "./images/autocad.png", name: "AutoCad" },
+    { img: "./images/solidworks.png", name: "SolisWorks" },
+    { img: "./images/ansys.png", name: "Ansys" },
   ];
 
   const frameworks = [
@@ -93,27 +96,25 @@ const Skill = () => {
           return skillCard(e.img, e.name, i.toString());
         })}
       </motion.div>
-      {/* <motion.div
+      <motion.div
         initial={{ x: 300, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
         transition={{ duration: 1 }}
         className="flex gap-4 items-center "
       >
         <h1 className="text-2xl text-black dark:text-white duration-1000 p-[2vw]">
-          Professional skills
+          Mechanical Design
         </h1>
         <div
           style={{ backgroundColor: texttheme }}
           className="w-[40%] h-1 duration-1000"
         ></div>
-      </motion.div> */}
-      {/* <motion.div className="p-[3vw] flex justify-center items-center flex-wrap gap-[2vw] lg:gap-[2vw] text-black dark:text-white">
-        <div className="relative w-[20vw] h-[20vw]">
-          <div style={{borderColor:"",borderRadius:"100%"}} className="w-full h-full absolute border-8"></div>
-          <div style={{backgroundColor:texttheme,borderRadius:"100% 100% 0 0"}} className="w-full h-full absolute "></div>
-          <div className="w-1/2 h-1/2 absolute top-0 right-0"></div>
-        </div>
-      </motion.div> */}
+      </motion.div>
+      <motion.div className="p-[3vw] flex justify-center items-center flex-wrap gap-[2vw] lg:gap-[2vw] text-black dark:text-white">
+        {softwares.map((e, i) => {
+          return skillCard(e.img, e.name, i.toString());
+        })}
+      </motion.div>
     </div>
   );
 };
@@ -134,14 +135,13 @@ const skillCard = (img: string, name: string, i: string) => {
     <motion.div
       initial={{ opacity: 0, y: -200 }}
       whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 1, ease:"linear" }}
+      transition={{ duration: 1, ease: "linear" }}
       key={i}
       style={{
         backgroundColor: Theme === "dark" ? darkPlateTheme : lightPlateTheme,
         borderColor: Theme === "dark" ? darkBoderTheme : lightBoderTheme,
       }}
       whileHover={{ borderColor: texttheme }}
-      
       className="border-[2px] duration-1000 flex flex-col justify-center items-center text-center p-[1vw] rounded-xl"
     >
       <img className="w-[80px] text-center min-w-[80px]" src={img} alt="" />
@@ -170,7 +170,7 @@ const languageCard = (
       key={i}
       initial={{ opacity: 0, x: 200 }}
       whileInView={{ opacity: 1, x: 0 }}
-      transition={{ duration: 1, ease:"linear" }}
+      transition={{ duration: 1, ease: "linear" }}
       style={{
         backgroundColor: Theme === "dark" ? darkPlateTheme : lightPlateTheme,
         borderColor: Theme === "dark" ? darkBoderTheme : lightBoderTheme,
@@ -181,7 +181,11 @@ const languageCard = (
       // transition={{duration:1}}
       className="flex md:h-full duration-1000 ease-linear w-[90%] md:w-[48%] min-w-[200px] group items-center gap-[1vw] border-[2px] p-[1vw] rounded-xl"
     >
-      <img className="w-[2vw] md:w-[5vw] lg:w-[6vw] min-w-[70px]" src={img} alt="" />
+      <img
+        className="w-[2vw] md:w-[5vw] lg:w-[6vw] min-w-[70px]"
+        src={img}
+        alt=""
+      />
       <div className="w-full duration-1000">
         <div className="">
           <div>{name}</div>
@@ -192,7 +196,7 @@ const languageCard = (
             className="h-2 duration-1000 bg-gray-300 dark:bg-gray-700 rounded-full"
           >
             <div
-              style={{ backgroundColor: texttheme, width:percentage }}
+              style={{ backgroundColor: texttheme, width: percentage }}
               className="w-[85%] h-2 rounded-full duration-1000"
             ></div>
           </motion.div>

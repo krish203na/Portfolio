@@ -41,6 +41,7 @@ console.log(Theme)
       >
         <div className="flex flex-col justify-around w-[90%] overflow-hidden md:w-full h-[50%]">
           <a
+            target="blank"
             href="mailto:krishla203@gmail.com"
             style={{ color: texttheme }}
             className="flex hover:underline gap-[1vw] duration-1000 justify-center items-center text-2xl md:text-3xl font-normal"
@@ -51,6 +52,7 @@ console.log(Theme)
           <div className="flex flex-wrap w-full">
             <div className="w-full flex gap-[3vw] justify-around">
               <a
+                target="blank"
                 href="https://www.github.com/krish203na"
                 className="flex hover:underline gap-[1vh] md:gap-[1vw] items-center text-xl font-normal"
               >
@@ -58,6 +60,7 @@ console.log(Theme)
                 <h1>Github</h1>
               </a>
               <a
+                target="blank"
                 href="https://www.instagram.com/krish_na203/"
                 className="flex hover:underline gap-[1vh] md:gap-[1vw] items-center text-xl font-normal"
               >
@@ -66,13 +69,15 @@ console.log(Theme)
             </div>
             <div className="w-full flex gap-[3vw] justify-around">
               <a
+                target="blank"
                 href="https://www.linkedin.com/in/krishna-panchal-5426aa271"
                 className="flex hover:underline gap-[1vh] md:gap-[1vw] items-center text-xl font-normal"
               >
                 <i className="fa-brands fa-linkedin"></i>LinkedIn
               </a>
               <a
-                href=""
+                target="blank"
+                href="https://www.facebook.com/profile.php?id=100012123313731"
                 className="flex hover:underline gap-[1vh] md:gap-[1vw] items-center text-xl font-normal"
               >
                 <i className="fa-brands fa-facebook"></i>Facebook
@@ -81,8 +86,10 @@ console.log(Theme)
           </div>
           <a href="tel:+"></a>
           <a
+            target="blank"
+            style={{ color: texttheme }}
             href="tel:+917038256913"
-            className="text-2xl hover:underline flex gap-[1vh] md:gap-[1vw] items-center justify-center font-normal"
+            className="text-2xl duration-1000 hover:underline flex gap-[1vh] md:gap-[1vw] items-center justify-center font-normal"
           >
             <i className="fa-brands fa-whatsapp hover:underline"></i>+91
             7038256913

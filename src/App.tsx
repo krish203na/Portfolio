@@ -131,7 +131,7 @@ function App() {
                         initial={{ borderColor: "transparent" }}
                         whileHover={{ borderColor: texttheme }}
                         className="border-2 duration-500 rounded-lg flex items-center justify-center w-full h-full"
-                        href="https://www.linkedin.com/in/krishna-panchal-5426aa271"
+                        href="https://www.facebook.com/profile.php?id=100012123313731"
                       >
                         <motion.i
                           className="fa-brands fa-square-facebook"
@@ -214,7 +214,7 @@ function App() {
                   >
                     <a
                       target="_blank"
-                      href="/doc/CompleteResume.pdf"
+                      href="./doc/CompleteResume.pdf"
                       download="Krishna_CV"
                       rel="noreferrer"
                       className="w-full h-full flex items-center justify-center hover:text-white duration-500 hover:dark:text-black"
@@ -355,9 +355,21 @@ function App() {
                 </NavLink>
               </div>
               <div
-                className={`lg:flex-col h-[30%] flex w-[40%] justify-center duration-1000 items-center gap-5 md:gap-2 text-black dark:text-white`}
+                className={`lg:flex-col h-[30%] flex w-[80%] md:w-[40%] justify-around lg:justify-center duration-1000 items-center lg:items-center gap-5 md:gap-2 text-black dark:text-white`}
               >
                 <h1 className="hidden lg:block">Theme</h1>
+                <button
+                  onClick={() => {
+                    onclickEvent(
+                      "#facc15",
+                      "#292524",
+                      "#211e04",
+                      "#ffeb9d",
+                      "#fffcef"
+                    );
+                  }}
+                  className="bg-[#facc15] rounded-full w-[3vh] h-[3vh] md:w-[2.5vw] md:h-[2.5vw] lg:w-[1.5vw] lg:h-[1.5vw]"
+                ></button>
                 <button
                   onClick={() => {
                     onclickEvent(
@@ -368,7 +380,7 @@ function App() {
                       "#edf6f0"
                     );
                   }}
-                  className="bg-[#16a34a] rounded-full w-5 h-5"
+                  className="bg-[#16a34a] rounded-full w-[3vh] h-[3vh] md:w-[2.5vw] md:h-[2.5vw] lg:w-[1.5vw] lg:h-[1.5vw]"
                 ></button>
                 <button
                   onClick={() => {
@@ -380,7 +392,7 @@ function App() {
                       "#fff3f5"
                     );
                   }}
-                  className="bg-[#e11d48] rounded-full w-5 h-5"
+                  className="bg-[#e11d48] rounded-full w-[3vh] h-[3vh] md:w-[2.5vw] md:h-[2.5vw] lg:w-[1.5vw] lg:h-[1.5vw]"
                 ></button>
                 <button
                   onClick={() => {
@@ -392,7 +404,7 @@ function App() {
                       "#ece7ff"
                     );
                   }}
-                  className="bg-[rgb(109,40,217)] rounded-full w-5 h-5"
+                  className="bg-[rgb(109,40,217)] rounded-full w-[3vh] h-[3vh] md:w-[2.5vw] md:h-[2.5vw] lg:w-[1.5vw] lg:h-[1.5vw]"
                 ></button>
                 <button onClick={handleThemeSwitch} className="text-[#061b06] ">
                   <div
