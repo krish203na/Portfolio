@@ -16,11 +16,11 @@ const Skill = () => {
   console.log(Theme)
 
   const languages = [
-    { img: "src/assets/images/java.png", name: "Java", percentage: "85%" },
-    { img: "src/assets/images/javascript.png", name: "JavaScript", percentage: "75%" },
-    { img: "src/assets/images/html.png", name: "HTML", percentage: "90%" },
-    { img: "src/assets/images/css.png", name: "CSS", percentage: "95%" },
-    { img: "src/assets/images/typescript.png", name: "TypeScript", percentage: "75%" },
+    { img: "./images/java.png", name: "Java", percentage: "85%" },
+    { img: "./images/javascript.png", name: "JavaScript", percentage: "75%" },
+    { img: "./images/html.png", name: "HTML", percentage: "90%" },
+    { img: "./images/css.png", name: "CSS", percentage: "95%" },
+    { img: "./images/typescript.png", name: "TypeScript", percentage: "75%" },
   ];
 
   const frameworks = [
