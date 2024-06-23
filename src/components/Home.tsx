@@ -1,12 +1,9 @@
 import { motion } from "framer-motion";
-import{ useContext } from "react";
+import { useContext } from "react";
 import { context } from "../App";
-// import { Theme } from "@tsparticles/engine";
-// import { HeroHighlight } from "./ui/hero-highlight";
 import { FlipWords } from "./ui/flip-words";
 import Marquee from "react-fast-marquee";
 import { NavLink } from "react-router-dom";
-// import Education from "./Education";
 
 const Home = () => {
   const [
@@ -18,74 +15,8 @@ const Home = () => {
     darkBoderTheme,
   ]: any = useContext(context);
 
-  // const carddetail = [
-  //   {
-  //     icon: "",
-  //     name: "Dedication",
-  //     para: "eaque ipsa quae ab illo inven tore veritatis et qua si architecto beatae atis et sopno vitae.",
-  //   },
-  //   {
-  //     icon: "",
-  //     name: "Smart Work",
-  //     para: "eaque ipsa quae ab illo inven tore veritatis et qua si architecto beatae atis et sopno vitae.",
-  //   },
-  //   {
-  //     icon: "",
-  //     name: "Team work",
-  //     para: "eaque ipsa quae ab illo inven tore veritatis et qua si architecto beatae atis et sopno vitae.",
-  //   },
-  //   {
-  //     icon: "",
-  //     name: "Technology",
-  //     para: "eaque ipsa quae ab illo inven tore veritatis et qua si architecto beatae atis et sopno vitae.",
-  //   },
-  // ];
-
   return (
-    // <motion.div className="flex flex-col gap-[2vh]">
-    //   <motion.div className="text-black duration-1000 dark:text-white text-4xl flex gap-3 items-center">
-    //     Hii !
-    //     <div
-    //       style={{ backgroundColor: texttheme }}
-    //       className="w-[50%] h-1 rounded-lg duration-1000"
-    //     ></div>
-    //   </motion.div>
-    //   <div>
-    //     <motion.div
-    //       style={{
-    //         backgroundColor:
-    //           Theme === "dark" ? darkPlateTheme : lightPlateTheme,
-    //         borderColor: Theme === "dark" ? darkBoderTheme : lightBoderTheme,
-    //       }}
-    //       className="text-black dark:text-white font-normal rounded-lg p-[1vw] my-5 duration-1000 border"
-    //     >
-    //       I am Krishna Ashok Panchal, I am passionate Full stack developer from
-    //       Mumbai, India. I love to transform ideas into Impactful Solutions with
-    //       a robust skill sets. I've led the creation of impactful projects,
-    //       including a full-stack e-commerce website, weather web app, and
-    //       various animated frontend websites. Armed with a Mechanical
-    //       Engineering background with experience in international company. This
-    //       dual expertise allows me to bridge the gap between mechanical design,
-    //       3d Modelling, analysis and software implementation, ensuring a
-    //       holistic and integrated approach to problem-solving.
-    //     </motion.div>
-    //     <motion.div
-    //       style={{
-    //         backgroundColor:
-    //           Theme === "dark" ? darkPlateTheme : lightPlateTheme,
-    //         borderColor: Theme === "dark" ? darkBoderTheme : lightBoderTheme,
-    //       }}
-    //       className="text-black dark:text-white font-normal rounded-lg p-[1vw] duration-1000 border"
-    //     >
-    //       my aim is to obtain a challenging position where I can able to
-    //       utilize my skills, and capabilities in fastly growing Software
-    //       industry can be utilized to enhance user experiences and drive
-    //       business objectives.
-    //     </motion.div>
-    //   </div>
-    // </motion.div>
     <>
-      {/* <div> */}
       <div className="flex h-screen relative flex-col gap-5 duration-1000 tracking-wider justify-center text-black dark:text-white items-center ">
         <motion.div
           initial={{ opacity: 0, scale: 0.3 }}
@@ -120,7 +51,6 @@ const Home = () => {
           style={{ backgroundColor: texttheme }}
           className="w-[80%] h-[1%] rounded-full duration-700"
         ></motion.div>
-        {/* {/* <motion.i initial={{rotate:45}} animate={{rotate:-90}} transition={{duration:1,repeatType:"reverse", repeat:Infinity}} className="fa-solid fa-code absolute top-[10%] rotate-[-35deg] text-5xl left-[10%]" style={{color:texttheme}}></motion.i> */}
         <motion.i
           initial={{ y: 30 }}
           animate={{ y: 0 }}
@@ -148,7 +78,6 @@ const Home = () => {
         <motion.div
           initial={{ x: 300, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
-          // transition={{ duration: 1 }}
           className="dark:text-white text-black flex flex-col rounded-xl gap-2 duration-1000 text-sm md:text-base font-normal p-[2vh] md:p-[1.5vw]"
           style={{
             backgroundColor:
@@ -157,11 +86,15 @@ const Home = () => {
           }}
         >
           <div>
-            I am <strong style={{color:texttheme, transitionDuration:"1s"}}>Krishna Ashok Panchal</strong>, I am passionate Full
-            stack developer from Mumbai, India. I love to transform ideas into
-            Impactful Solutions with a robust skill sets. I've created impactful
-            projects, including a full-stack e-commerce website, weather web
-            app, portfolio websites and various animated frontend websites.
+            I am{" "}
+            <strong style={{ color: texttheme, transitionDuration: "1s" }}>
+              Krishna Ashok Panchal
+            </strong>
+            , I am passionate Full stack developer from Mumbai, India. I love to
+            transform ideas into Impactful Solutions with a robust skill sets.
+            I've created impactful projects, including a full-stack e-commerce
+            website, weather web app, portfolio websites and various animated
+            frontend websites.
           </div>
           <div>
             {" "}
@@ -180,7 +113,6 @@ const Home = () => {
         <motion.div
           initial={{ x: 300, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
-          // transition={{ duration: 1 }}
           className="dark:text-white text-black text-sm md:text-base rounded-lg duration-1000 font-normal p-[2vh] md:p-[1.5vw]"
           style={{
             backgroundColor:
@@ -218,11 +150,9 @@ const Home = () => {
           <div className="text-center text-7xl">
             <i className="fa-duotone fa-arrows-to-circle animate-pulse"></i>
           </div>
-          {/* <div> */}
           <div className="text-2xl font-semibold text-center animate-pulse">
             Dedication
           </div>
-          {/* </div> */}
         </motion.div>
         <motion.div
           initial={{ y: 80 }}
@@ -299,8 +229,6 @@ const Home = () => {
       </div>
       <div
         style={{
-          // backgroundColor: Theme === "dark" ? darkPlateTheme : lightPlateTheme,
-          // borderColor: Theme === "dark" ? darkBoderTheme : lightBoderTheme,
           color: texttheme,
         }}
         className="text-6xl py-10 duration-1000"
@@ -350,7 +278,6 @@ const Home = () => {
           className="w-[30%] h-[1%] duration-700 "
         ></motion.div>
       </div>
-      {/* </div> */}
     </>
   );
 };

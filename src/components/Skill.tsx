@@ -1,16 +1,9 @@
 import { useContext } from "react";
 import { context } from "../App";
 import { motion } from "framer-motion";
-// import { GradientType } from "@tsparticles/engine";
 
 const Skill = () => {
-  const [Theme, texttheme]: // lightPlateTheme,
-  // lightBoderTheme,
-  // darkPlateTheme,
-  // darkBoderTheme,
-  any = useContext(context);
-
-  console.log(Theme);
+  const [Theme, texttheme]: string[] = useContext(context);
 
   const languages = [
     { img: "./images/java.png", name: "Java", percentage: "85%" },
@@ -54,7 +47,7 @@ const Skill = () => {
           Skills
         </h1>
         <div
-          style={{ backgroundColor: texttheme }}
+          style={{ backgroundColor: Theme === "dark" ? texttheme : texttheme }}
           className="w-[60%] h-1 duration-1000"
         ></div>
       </motion.div>
@@ -176,9 +169,6 @@ const languageCard = (
         borderColor: Theme === "dark" ? darkBoderTheme : lightBoderTheme,
       }}
       whileHover={{ borderColor: texttheme }}
-      // initial={{width:"100px"}}
-      // whileHover={{width:"20vw"}}
-      // transition={{duration:1}}
       className="flex md:h-full ease-linear w-[90%] md:w-[48%] min-w-[200px] group items-center gap-[1vw] border-[2px] p-[1vw] rounded-xl"
     >
       <img

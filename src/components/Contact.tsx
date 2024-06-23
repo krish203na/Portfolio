@@ -1,19 +1,11 @@
-import { useContext } from 'react'
-import { context } from '../App';
-import { motion } from 'framer-motion';
+import { useContext } from "react";
+import { context } from "../App";
+import { motion } from "framer-motion";
 
 const Contact = () => {
+  const [Theme, texttheme]: any = useContext(context);
 
-  const [
-    Theme,
-    texttheme,
-    // lightPlateTheme,
-    // lightBoderTheme,
-    // darkPlateTheme,
-    // darkBoderTheme,
-  ]: any = useContext(context);
-
-console.log(Theme)
+  console.log(Theme);
 
   return (
     <div className="text-black duration-1000 dark:text-white flex flex-col md:flex-row p-[3vh] md:p-[3vw] h-[95vh]">
@@ -99,6 +91,6 @@ console.log(Theme)
       </motion.div>
     </div>
   );
-}
+};
 
-export default Contact
+export default Contact;

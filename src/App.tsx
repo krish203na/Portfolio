@@ -4,21 +4,19 @@ import krish from "./assets/krish.jpg";
 import "./components/TheamToggleSwitch/theamToggleSwitchcss.css";
 import { motion } from "framer-motion";
 import { NavLink, Outlet } from "react-router-dom";
-// import { HoverEvent } from "@tsparticles/engine";
 export const context = React.createContext([""]);
 
 function App() {
-  // <======================================= Routes ===================================================>
-
-  // <======================================= Routes ===================================================>
+  // <======================================= theme variables ===================================================>
 
   const [texttheme, setTexttheme] = useState("#facc15");
   const [lightPlateTheme, setLightPlateTheme] = useState("#fffcef");
   const [lightBoderTheme, setLightBoderTheme] = useState("#ffeb9d");
   const [darkPlateTheme, setdarkPlateTheme] = useState("#211e04");
   const [darkBoderTheme, setdarkBoderTheme] = useState("#292524");
-
   const [Theme, setTheme] = useState("");
+
+  // <======================================= theme variables ===================================================>
 
   useEffect(() => {
     if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
@@ -27,6 +25,8 @@ function App() {
       setTheme("light");
     }
   }, []);
+
+  // <======================================= theme changers ===================================================>
 
   const onclickEvent = (
     theme: string,
@@ -41,6 +41,7 @@ function App() {
     setLightBoderTheme(() => lightBorder);
     setdarkPlateTheme(() => darkPlatecolor);
   };
+
   useEffect(() => {
     if (Theme === "dark") {
       document.documentElement.classList.add("dark");
@@ -48,6 +49,8 @@ function App() {
       document.documentElement.classList.remove("dark");
     }
   }, [Theme]);
+
+  // <======================================= theme changers ===================================================>
 
   const handleThemeSwitch = () => {
     setTheme(Theme === "dark" ? "light" : "dark");
@@ -67,7 +70,7 @@ function App() {
       >
         <div className="duration-1000 w-full h-[100%] fixed transition-all bg-gradient-to-45 dark:bg-gradient-to-135"></div>
         <div className="w-full duration-1000 transition-all min-h-[600px] h-full flex flex-col items-center lg:flex-row  lg:justify-center lg:items-start md:px-[1vw]">
-          {/* <===================================== Profile ========================================> */}
+          {/* <===================================== Profile section ========================================> */}
           <div className=" flex items-center sticky top-0 justify-center min-h-[600px] md:min-h-[70%] h-screen w-full lg:w-[25vw]">
             <div className="w-[90%] h-[95%] rounded-lg flex flex-row md:flex-col lg:flex-row justify-center items-end relative">
               <img
@@ -92,7 +95,6 @@ function App() {
                     <div
                       className={`flex justify-around h-full gap-2 items-center lg:text-3xl md:text-5xl text-4xl`}
                     >
-                      {/* <div className={` flex justify-center items-center`}> */}
                       <motion.a
                         initial={{ borderColor: "transparent" }}
                         whileHover={{ borderColor: texttheme }}
@@ -104,8 +106,6 @@ function App() {
                           style={{ color: "#ff007b" }}
                         ></motion.i>
                       </motion.a>
-                      {/* </div>
-                      <div className={` flex justify-center items-center`}> */}
                       <motion.a
                         initial={{ borderColor: "transparent" }}
                         whileHover={{ borderColor: texttheme }}
@@ -114,8 +114,6 @@ function App() {
                       >
                         <i className="fa-brands fa-github"></i>
                       </motion.a>
-                      {/* </div>
-                      <div className={`flex justify-center items-center`}> */}
                       <motion.a
                         initial={{ borderColor: "transparent" }}
                         whileHover={{ borderColor: texttheme }}
@@ -138,7 +136,6 @@ function App() {
                           style={{ color: "#007bff" }}
                         ></motion.i>
                       </motion.a>
-                      {/* </div> */}
                     </div>
                   </div>
                   <motion.div
@@ -226,16 +223,12 @@ function App() {
               </div>
             </div>
           </div>
-          {/* <===================================== Profile ========================================> */}
+          {/* <===================================== Profile section ========================================> */}
 
-          {/* <===================================== Display ========================================> */}
+          {/* <===================================== Display section ========================================> */}
           <div
             className={`flex items-center justify-center h-[100%] mt-[3vh] w-full md:w-[90%] lg:w-[70vw] font-extrabold`}
           >
-            {/* <div className="w-[100%] md:hidden bg-[white] flex flex-col duration-1000 dark:bg-[black] gap-[2vh] h-[95%] text-6xl justify-center text-black dark:text-white items-center p-[10vh] rounded-xl z-10">
-              <i className="fa-solid fa-rotate fa-spin"></i>
-              <p className="text-2xl text-center">view in landscape mode</p>
-            </div> */}
             <div
               id="main"
               className="lg:w-[95%] w-full md:block  relative h-[100%] lg:h-[95%] rounded-xl bg-[white] duration-1000 dark:bg-[#171717] lg:overflow-y-scroll overflow-x-hidden"
@@ -243,9 +236,9 @@ function App() {
               <Outlet />
             </div>
           </div>
-          {/* <===================================== Display ========================================> */}
+          {/* <===================================== Display section ========================================> */}
 
-          {/* <===================================== Menu ========================================> */}
+          {/* <===================================== Menu section ========================================> */}
           <div className=" md:flex sticky top-0 bottom-0 lg:flex-col gap-2 items-center justify-center lg:h-screen w-[100%] lg:w-[6vw]  z-10">
             <div className="lg:bg-[#ffffff42] lg:bg-white lg:dark:bg-black dark:bg-[#00000038] duration-1000 backdrop-blur-md flex flex-col md:flex-row gap-3 md:gap-0 lg:flex-col items-center justify-around h-full py-[1vh] md:h-[95%] sticky md:rounded-xl w-[100%] p-[1vw] lg:p-0">
               <div className="h-[50%] flex lg:flex-col gap-1 duration-1000 justify-around lg:w-full md:w-[60%] w-full items-center text-black dark:text-white text-[1.6rem] hover">
@@ -261,8 +254,6 @@ function App() {
                   <motion.div
                     whileHover={{
                       backgroundColor: texttheme,
-
-                      // color: Theme === "dark" ? "black" : "white",
                     }}
                     transition={{ duration: 0.5 }}
                     id="Home"
@@ -284,7 +275,6 @@ function App() {
                   <motion.div
                     whileHover={{
                       backgroundColor: texttheme,
-                      // color: Theme === "dark" ? "black" : "black",
                     }}
                     id="Education"
                     className="w-[4.5vw] h-[4.5vw] rounded-lg flex flex-col gap-1 justify-center items-center"
@@ -304,7 +294,6 @@ function App() {
                   <motion.div
                     whileHover={{
                       backgroundColor: texttheme,
-                      // color: Theme === "dark" ? "black" : "black",
                     }}
                     id="Skills"
                     className="w-[4.5vw] h-[4.5vw] rounded-lg flex flex-col justify-center items-center"
@@ -324,7 +313,6 @@ function App() {
                   <motion.div
                     whileHover={{
                       backgroundColor: texttheme,
-                      // color: Theme === "dark" ? "black" : "black",
                     }}
                     id="Project"
                     className="w-[4.5vw] h-[4.5vw] rounded-lg flex flex-col justify-center items-center"
@@ -344,7 +332,6 @@ function App() {
                   <motion.div
                     whileHover={{
                       backgroundColor: texttheme,
-                      // color: Theme === "dark" ? "black" : "black",
                     }}
                     transition={{ duration: 0.5 }}
                     id="Contact"
@@ -430,9 +417,8 @@ function App() {
               </div>
             </div>
           </div>
-          {/* <===================================== Menu ========================================> */}
+          {/* <===================================== Menu section ========================================> */}
         </div>
-        {/* </div> */}
       </context.Provider>
     </>
   );

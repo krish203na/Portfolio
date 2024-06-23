@@ -1,16 +1,8 @@
 import { motion } from "framer-motion";
-import  { useContext } from "react";
+import { useContext } from "react";
 import { context } from "../App";
 
 const Project = () => {
-  // const languages = [
-  //   { img: "/images/java.png", name: "Java", percentage: "85%" },
-  //   { img: "/images/javascript.png", name: "JavaScript", percentage: "70%" },
-  //   { img: "/images/html.png", name: "HTML", percentage: "90%" },
-  //   { img: "/images/css.png", name: "CSS", percentage: "95%" },
-  //   { img: "/images/typescript.png", name: "TypeScript", percentage: "70%" },
-  // ];
-
   const [
     Theme,
     texttheme,
@@ -57,7 +49,6 @@ const Project = () => {
             loop
             muted
             controls
-            // src="/video/Fashi.mp4"
             src=".\video\Fashi.mp4"
           ></video>
           <div className="flex flex-col items-center py-[2vh] gap-[2.5vh]">

@@ -1,17 +1,8 @@
-/* // <uniquifier>: Use a unique and descriptive class name
-// <weight>: Use a value from 100 to 900 */
-/* 
-.roboto-slab-<uniquifier> {
-    font-family: "Roboto Slab", serif;
-    font-optical-sizing: auto;
-    font-weight: <weight>;
-    font-style: normal;
-} */
-*{
+* {
     font-family: "Roboto Slab",
         serif;
-        /* transition-duration: 500ms; */
 }
+
 #main::-webkit-scrollbar {
     width: 1px;
 }
@@ -27,7 +18,5 @@
 }
 
 #main::-webkit-scrollbar-corner {
-    /* background: black;
-    border-radius: 100px; */
     display: none;
 }

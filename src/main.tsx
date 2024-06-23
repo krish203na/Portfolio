@@ -15,6 +15,8 @@ import Project from "./components/Project.tsx";
 import Skill from "./components/Skill.tsx";
 import { AnimatePresence } from "framer-motion";
 
+// <============================== Routes ====================================>
+
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route>
@@ -28,6 +30,8 @@ const router = createBrowserRouter(
     </Route>
   )
 );
+
+// <============================== Routes ====================================>
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
