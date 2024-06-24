@@ -6,7 +6,7 @@ Welcome to my personal portfolio! This project showcases my journey and skills a
 https://krish203na.github.io/Portfolio/
 
 ## Here is a detailed walkthrough of the portfolio:
-![Project_Video] (<video controls src="public/video/portfolio.mp4" title="portfolio"></video>)
+<video controls src="public/video/portfolio.mp4" title="portfolio"></video>
 
 ## Table of Contents
 
@@ -62,29 +62,29 @@ After starting the development server, open your browser and navigate to `http:/
 ## Screenshots
 
 ### Home
-![Home](<img
+<img
         src="public/images/portfolioHome.png"
-      />)
+      />
 
 ### Education
-![Education](<img
+<img
         src="public/images/portfolioEducation.png"
-      />)
+      />
 
 ### Skills
-![Skills](<img
+<img
         src="public/images/portfolioSkills.png"
-      />)
+      />
 
 ### Projects
-![Projects](<img
+<img
         src="public/images/portfolioProject.png"
-      />)
+      />
 
 ### Contact
-![Contact](<img
+<img
         src="public/images/portfolioContact.png"
-      />)
+      />
 
 ## Contact
 
