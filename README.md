@@ -6,7 +6,7 @@ Welcome to my personal portfolio! This project showcases my journey and skills a
 https://krish203na.github.io/Portfolio/
 
 ## Here is a detailed walkthrough of the portfolio:
-<video controls src="public/video/portfolio.mp4" title="portfolio"></video>
+<video autoplay muted loop controls src="public/video/portfolio.mp4" title="portfolio"></video>
 
 ## Table of Contents
 
