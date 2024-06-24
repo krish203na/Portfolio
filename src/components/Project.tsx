@@ -192,7 +192,7 @@ const Project = () => {
             loop
             muted
             controls
-            src=".\video\personal.mp4"
+            src=".\video\portfolio.mp4"
           ></video>
           <div className="flex flex-col items-center py-[2vh] gap-[2.5vh]">
             <h1 className="text-2xl text-center ">Personal Portfolio</h1>
